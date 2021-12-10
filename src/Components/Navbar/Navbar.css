@@ -1,0 +1,57 @@
+/* font-family: 'Roboto', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; */
+
+.nav-container {
+    text-align: right;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+}
+
+#navbar {
+    background-color: black;
+    border-radius: 0 8px 8px 0;
+    transform: translateY(calc(-300%));
+    transition: transform .2s cubic-bezier(.4, 0, .2, 1) .2s;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+  
+.nav-container:hover #navbar {
+    transform: translateY(0);
+    transition-delay: 0s;
+}
+  
+#navbar {
+    position: relative;
+}
+  
+.link-container {
+    margin-top: .3rem;
+    font-size: 18px;
+    width: 100%;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+	background-color: #2c2a32;
+	border-radius: 4px;
+	transition: all 0.2s ease-out;
+}
+
+body {
+margin: 0;
+}
+
+.nav-container,
+.nav-container * {
+box-sizing: border-box;
+}
