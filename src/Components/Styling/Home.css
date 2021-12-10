@@ -1,0 +1,18 @@
+body {
+    border: none;
+    background-size: cover;
+    background-image: url('../Photos/Home2.jpeg');
+}
+
+
+mark{
+    font-weight: 400;
+    color: grey;
+    background: none;
+    letter-spacing: 0;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    position: sticky;
+    z-index: 9999;
+    display: inline-block;
+}
