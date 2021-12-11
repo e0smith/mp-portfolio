@@ -3,7 +3,7 @@ function Home(){
 
     return(
         <HomeBackground>
-            <NameMark>Megan Proctor</NameMark>
+            <NameMark><strong>Megan </strong>Proctor</NameMark>
         </HomeBackground>
     )
 }
