@@ -3,7 +3,7 @@ import Home from './Components/Pages/Home'
 import NavBar from './Components/Navbar/Navbar'
 // import {useDispatch,useSelector} from 'react-redux'
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Gallery from './Components/Pages/Gallery';
 
 function App() {
@@ -11,8 +11,10 @@ function App() {
     <Router>
       <div className="App">
         <NavBar />
-        <Home path="/"/>
-        <Gallery path="gallery"/>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/gallery' element={<Gallery/>} />
+        </Routes>
       </div>
     </Router>
   )
