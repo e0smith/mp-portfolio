@@ -1,13 +1,17 @@
-body {
+#home-body {
     border: none;
+    background: url('../Photos/Home2.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-image: url('../Photos/Home2.jpeg');
 }
 
 
-mark{
+#home-body mark {
+    font-family: 'Roboto', "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-weight: 400;
-    color: grey;
+    color: rgb(155, 155, 155);
     background: none;
     letter-spacing: 0;
     margin-left: .5rem;
