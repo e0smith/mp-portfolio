@@ -1,11 +1,10 @@
-import "../Styling/Gallery.css"
+import { Container, NameMark } from "../Container.style"
 
 export default function Gallery(){
+
     return(
-        <div className="Gallery">
-            <body id="gallery-body">
-                test
-            </body>
-        </div>
+        <Container>
+            <NameMark>Megan Proctor</NameMark>
+        </Container>
     )
 }

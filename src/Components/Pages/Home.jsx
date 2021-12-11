@@ -1,12 +1,10 @@
-import "../Styling/Home.css"
-
+import { HomeBackground, NameMark } from "../Container.style";
 function Home(){
+
     return(
-        <div className="Home">
-            <body id="home-body">
-                <mark>Megan Proctor</mark>
-            </body>
-        </div>
+        <HomeBackground>
+            <NameMark>Megan Proctor</NameMark>
+        </HomeBackground>
     )
 }
 
