@@ -1,12 +1,11 @@
-import Navbar from "../Navbar/Navbar";
 import "../Styling/Home.css"
-// import Temp from "../Photos/Temp-home-photo.jpeg";
+
 function Home(){
     return(
         <div className="Home">
-            <mark>Megan Proctor</mark>
-            <Navbar />
-            {/* <img src={Temp} alt="home" className="Cover"/> */}
+            <body id="home-body">
+                <mark>Megan Proctor</mark>
+            </body>
         </div>
     )
 }
