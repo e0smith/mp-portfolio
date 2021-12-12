@@ -30,17 +30,20 @@ export const NameMark = styled.mark`
     display: inline-block;
 `
 
-export const FormBox = styled.article`
-    width:200px;
-    padding:20rem;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-`
+// export const FormBox = styled.table`
+//     box-sizing: border-box;
+//     justify-content: center;
+//     // margin: auto;
+// `
+
 export const SubBodyForm = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 30px;
+    display: inline-block;
 `
 export const InputText = styled.input`
     width: 40rem;
@@ -70,12 +73,28 @@ export const SubmitButton = styled.button`
     text-align: center;
     position: relative;
 `
-export const InfoBox = styled.article`
+export const InfoBox = styled.section`
     background-color: #ffff;
-    border: 1px solid;
-    margin: 10px 0px;
-    padding: 10rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
     text-align: center;
     position: relative;
     text-color: black;
+    height: 55rem;
+    width: 50rem;
+`
+
+export const InfoHeader = styled.header`
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size:40px;
+    background-color: #717D7E;
+    color: white;
+`
+
+export const H2Boarder = styled.h2`
+border-top: 1px dashed #ddd;
+border-bottom: 1px dashed #ddd;
 `
