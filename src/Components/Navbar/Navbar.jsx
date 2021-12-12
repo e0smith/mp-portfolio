@@ -21,7 +21,7 @@ export default function Navbar() {
                         <Link className="nav-link" to="/about">
                             ABOUT
                         </Link>
-                        <Link className="nav-link" to="/policy">
+                        <Link className="nav-link" to="/site-policy">
                             SITE POLICY
                         </Link>
                     </li>
