@@ -1,4 +1,4 @@
-import { Container, NameMark, InfoBox } from "../Container.style"
+import { Container, NameMark, InfoBox, InfoHeader } from "../Container.style"
 
 export default function About(){
 
@@ -7,8 +7,8 @@ export default function About(){
             <NameMark>Megan Proctor</NameMark>
             <InfoBox>
                 <article className="sub-body">
-                    <header> About </header>
-                    <section>
+                    <InfoHeader><strong>About</strong></InfoHeader>
+                    <div>
                         <h2>Information</h2>
                         <div className="info-box">
                             <div>
@@ -20,7 +20,7 @@ export default function About(){
                                 <p> Pratt Institute, Brooklyn, New York</p>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </article>
             </InfoBox>
         </Container>
