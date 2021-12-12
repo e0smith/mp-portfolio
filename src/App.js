@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Gallery from './Components/Pages/Gallery';
 import About from './Components/Pages/About';
 import Inquiry from './Components/Pages/Inquiry';
+import Policy from './Components/Pages/Policy';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route path='/gallery' element={<Gallery/>} />
           <Route path='/about' element={<About/>} />
           <Route path='/inquiry' element={<Inquiry/>} />
+          <Route path='/site-policy' element={<Policy/>} />
+
         </Routes>
       </div>
     </Router>
