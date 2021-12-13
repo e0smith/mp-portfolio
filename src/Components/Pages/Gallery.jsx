@@ -5,6 +5,9 @@ export default function Gallery(){
     return(
         <Container>
             <NameMark>Megan Proctor</NameMark>
+            <div>
+                
+            </div>
         </Container>
     )
 }

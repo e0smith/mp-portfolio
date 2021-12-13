@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: #2d2d2d;
+    overflow:auto;
 `
 
 export const HomeBackground = styled.div`
@@ -86,7 +87,7 @@ export const InfoBox = styled.section`
 `
 
 export const InfoHeader = styled.header`
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
     font-size:40px;
@@ -94,7 +95,22 @@ export const InfoHeader = styled.header`
     color: white;
 `
 
-export const H2Boarder = styled.h2`
-border-top: 1px dashed #ddd;
-border-bottom: 1px dashed #ddd;
+// export const H2Boarder = styled.h2`
+//     border-top: 1px dashed #ddd;
+//     border-bottom: 1px dashed #ddd;
+// `
+
+export const PolicyBox = styled.div`
+    background-color: #ffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    position: relative;
+    text-color: black;
+    height: 82rem;
+    width: 60rem;
+`
+export const PolicyText = styled.div`
+    padding: 15px;
 `

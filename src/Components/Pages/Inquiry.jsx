@@ -18,7 +18,7 @@ export default function About(){
             <NameMark>Megan Proctor</NameMark>
             <InfoBox>
                 {/* <FormBox> */}
-                    <InfoHeader> Inquiry </InfoHeader>
+                    <InfoHeader><strong> Inquiry </strong></InfoHeader>
                     <SubBodyForm>
                         <div className="info-box">
                             <div>
