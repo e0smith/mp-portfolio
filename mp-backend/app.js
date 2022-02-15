@@ -8,5 +8,11 @@ const port = process.env.PORT || 3080;
 app.engine('hbs', exphbs[{ extname: '.hbs'}]);
 app.set('view engine', 'hbs');
 
+
+app.get('', (req, res) => {
+    res.render('index');
+})
+
+
 app.listen(port, ()=> console.log(`Listening on port ${port}`))
 
