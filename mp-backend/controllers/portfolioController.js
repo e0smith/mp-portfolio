@@ -3,8 +3,6 @@ pry = require('pryjs')
 
 // create main Model
 const Portfolio = db.portfolios
-const Photo = db.photos
-
 
 // create portfolio
 const addPortfolio = async (req, res) => {
