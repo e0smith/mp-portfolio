@@ -6,10 +6,10 @@ const router = require('express').Router()
 
 // use routers
 router.post('/addPhoto', photoController.upload, photoController.addPhoto)
-router.get('/allPhotos', photoController.getAllPhotos)
+router.get('/', photoController.getAllPhotos)
 
 // Photo Url and Controller
-router.get('/allPhotos', photoController.getAllPhotos)
+// router.get('/allPhotos', photoController.getAllPhotos)
 router.post('/addPhoto/:id', photoController.addPhoto)
 
 // Photo router
