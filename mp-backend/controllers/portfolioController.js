@@ -16,12 +16,11 @@ const addPortfolio = async (req, res) => {
     console.log(portfolio)
 }
 
+
 // get all portfolios
 const getAllPortfolios = async (req, res) => {
-    eval(pry.it)
-    let portfolios = await Portfolio.findAll({})
-    res.status(200).send(portfolios)
-
+    let portfolio = await Portfolio.findAll()
+    res.status(200).send(portfolio)
 }
 
 // get single portfolio
@@ -45,18 +44,18 @@ const deletePortfolio = async (req, res) => {
     res.status(200).send('Portfolio is deleted !')
 }
 
-// get all photos that belong to portfolio
-const getPortfolioPhotos =  async (req, res) => {
-    const id = req.params.id
-    const data = await Portfolio.findOne({
-        include: [{
-            model: Photo,
-            as: 'photo'
-        }],
-        where: { id: id }
-    })
-    res.status(200).send(data)
-}
+// // get all portfolios that belong to portfolio
+// const getPortfolioPortfolios =  async (req, res) => {
+//     const id = req.params.id
+//     const data = await Portfolio.findOne({
+//         include: [{
+//             model: Photo,
+//             as: 'photo'
+//         }],
+//         where: { id: id }
+//     })
+//     res.status(200).send(data)
+// }
 
 module.exports = {
     addPortfolio,
@@ -64,5 +63,5 @@ module.exports = {
     getOnePortfolio,
     updatePortfolio,
     deletePortfolio,
-    getPortfolioPhotos,
+    // getPortfolioPortfolios,
 }
