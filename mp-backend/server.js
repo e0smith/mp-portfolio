@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 
 const app = express()
+app.use(cors())
 
 // middleware
 app.use(express.json())
@@ -9,8 +10,11 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // routers
-const router = require('./routes/portfolioRouter.js')
-app.use('/api/portfolios', router)
+const portfolioRouter = require('./routes/portfolioRouter.js')
+app.use('/api/portfolios', portfolioRouter)
+
+const photoRouter = require('./routes/photoRouter.js')
+app.use('/api/photos', photoRouter)
 
 
 //static Images Folder
