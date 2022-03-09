@@ -11,7 +11,6 @@ const addPhoto = async (req, res) => {
     let info = {
         image: req.file.path,
         title: req.body.title,
-        date: req.body.date,
         description: req.body.description
     }
     const photo = await Photo.create(info)
