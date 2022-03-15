@@ -9,7 +9,8 @@ import Policy from './Components/Pages/Policy';
 import { getPhotos } from './actions/photo';
 import { getPortfolios} from './actions/portfolio';
 import { useDispatch } from "react-redux";
-
+import { useSelector } from "react-redux";
+import { PortfolioCard } from './Components/Cards/portfolioCard';
 
 function App() {
 
@@ -18,6 +19,10 @@ function App() {
     dispatch(getPhotos());
     dispatch(getPortfolios());
   }, [dispatch]);
+
+
+  const photoArray = useSelector(state => state.photos.photos);
+  let listOfPhotos = photoArray.map(photo => photoCard(photo))
 
   return (
     <Router>
@@ -29,6 +34,7 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/inquiry' element={<Inquiry/>} />
           <Route path='/site-policy' element={<Policy/>} />
+          <Route path='/photo/:id' component={listOfPhotos} />
 
         </Routes>
       </div>
