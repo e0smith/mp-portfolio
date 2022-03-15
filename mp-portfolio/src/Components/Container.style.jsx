@@ -1,5 +1,14 @@
 import styled from "styled-components";
 import img from "../Components/Photos/Home2.jpeg"
+import { createGlobalStyle } from "styled-components";
+
+export const FontStyle = createGlobalStyle`
+body {
+    font-family: "Roboto", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+	font-weight: 300;
+}
+`;
+
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
@@ -113,4 +122,64 @@ export const PolicyBox = styled.div`
 `
 export const PolicyText = styled.div`
     padding: 15px;
+`
+
+export const GTitleBox = styled.div`
+    width: 200px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 20%;
+`
+
+export const Gtitle = styled.h1`
+    font-size: 20px;
+    color: #ccc;
+`
+export const GPortfolio = styled.div`
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    position: relative;
+`
+
+export const GPTitleBox = styled.div`
+    width: 100%;
+    height: 60px;
+    padding-left: 20%;
+    padding-bottom: 120px
+`
+
+export const GPTitle = styled.h2`
+    font-size: 14px;
+    color: #ccc;
+    font-weight: bold;
+    width: 200px;
+    padding: 15px 0 30px;
+    border-top: 1px dotted #666;
+    border-bottom: 1px dotted #666;
+    position: relative;
+    top: 20px;
+`
+
+export const GSection = styled.section`
+    margain top: 10px;
+`
+export const PortfolioBox = styled.div`
+    width: 100%;
+    height: 160px;
+    position: relative;
+`
+export const Hover = styled.div`
+    &:hover {
+        background-color: #444;
+    }
+`
+
+export const PortfolioShow = styled.div`
+    display: none
+`
+
+export const PhotoCard = styled.div`
+
 `
