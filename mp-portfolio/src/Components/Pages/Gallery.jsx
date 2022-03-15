@@ -1,13 +1,24 @@
-import { Container, NameMark } from "../Container.style"
+import { Container, NameMark, GSection, GTitleBox, Gtitle, GPortfolio, Hover, PortfolioBox } from "../Container.style"
+import { PortfolioCard } from "../Cards/portfolioCard";
+import { useSelector } from "react-redux";
+import { useState } from 'react';
 
 export default function Gallery(){
 
+    const portfolioArray = useSelector(state => state.portfolios.portfolios);
+    let listOfPortfolios = portfolioArray.map(port => PortfolioCard(port))
+    
     return(
         <Container>
             <NameMark>Megan Proctor</NameMark>
-            <div>
-                
-            </div>
+            <GSection>
+                <GTitleBox>
+                    <Gtitle>GALLERY</Gtitle>
+                </GTitleBox>
+                <GPortfolio>
+                        {listOfPortfolios}
+                </GPortfolio>
+            </GSection>
         </Container>
     )
 }
