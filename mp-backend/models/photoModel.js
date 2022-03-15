@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         description: {
             type: DataTypes.TEXT,
             allowNull: true
-        }
+        },
     })
 
     return Photo
