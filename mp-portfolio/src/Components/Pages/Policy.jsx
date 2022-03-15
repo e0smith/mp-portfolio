@@ -14,7 +14,7 @@ export default function Policy(){
                         Express written permission must be granted, on behalf of the photographer (copyright holder, Megan V. Proctor), in order to use these photographs for any purpose that is not outlined above.</p>
                     <p> Your use of proctorphotos.com or viewing of this statement indicates your acceptance of these conditions. </p>
                     <h2> II. Personal Use Criteria </h2>
-                    <p>The following are a list of conditions where I, Megan V. Proctor, give inPolicyBoxiduals permission to link to (or copy) JPEG images and other material at no charge: </p>
+                    <p>The following are a list of conditions where I, Megan V. Proctor, give permission to link to (or copy) JPEG images and other material at no charge: </p>
                     <ol>
                         <li> You may print a copy of any photograph for personal reference without  further permission. </li>
                         <li> Students are welcome to download images and incorporate them into school reports, presentations, etc. for free so long as proper credit/citation is given, without my further permission. </li>
