@@ -1,8 +1,7 @@
 import React from "react";
-import { PhotoCard } from "../Container.style";
+import { PhotoCardStyle} from "../Container.style";
 
-export default function PhotoCard (){
-    const {image, id} = 
+export const PhotoCard = () => {
     return(
         <PhotoCard>
             
