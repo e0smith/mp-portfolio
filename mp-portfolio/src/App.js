@@ -21,10 +21,16 @@ function App() {
   }, [dispatch]);
 
 
-  const photoArray = useSelector(state => state.photos.photos);
-  let listOfPhotos = photoArray.map(photo => photoCard(photo))
+  // const photoArray = useSelector(state => state.photos.photos);
+
+  // let photo = photoArray.map(photo => {
+  //     if(this.photo.portfolio_id === port.id)
+  //     return(MiniPhotoCard(photo))
+  // })
+  // let listOfPhotos = photoArray.map(photo => photoCard(photo))
 
   return (
+    // {photoArray},
     <Router>
       <div className="App">
         <NavBar />
@@ -34,12 +40,13 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/inquiry' element={<Inquiry/>} />
           <Route path='/site-policy' element={<Policy/>} />
-          <Route path='/photo/:id' component={listOfPhotos} />
+          {/* <Route path='/photo/:id' component={listOfPhotos} /> */}
 
         </Routes>
       </div>
     </Router>
   )
 }
+
 
 export default App;
