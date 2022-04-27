@@ -1,8 +1,6 @@
 const db = require('../models')
-pry = require('pryjs')
-
-// create main Model
 const Portfolio = db.portfolios
+pry = require('pryjs')
 
 // create portfolio
 const addPortfolio = async (req, res) => {
