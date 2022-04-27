@@ -180,6 +180,6 @@ export const PortfolioShow = styled.div`
     display: none
 `
 
-export const PhotoCard = styled.div`
+export const PhotoCardStyle = styled.div`
 
 `
