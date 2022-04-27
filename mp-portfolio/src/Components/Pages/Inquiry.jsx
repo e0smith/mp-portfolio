@@ -3,12 +3,12 @@ import {
     TextArea,
     InputText,
     SubmitButton,
-    FormBox,
+    // FormBox,
     Container,
     NameMark,
     InfoHeader,
     InfoBox,
-    H2Boarder
+    // H2Boarder
 } from "../Container.style"
 
 export default function About(){
