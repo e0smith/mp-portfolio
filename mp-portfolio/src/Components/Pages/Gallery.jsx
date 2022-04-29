@@ -5,11 +5,11 @@ import { useState } from 'react';
 import { MiniPhotoCard } from "../Cards/miniPhotoCard";
 
 export default function Gallery(){
-    const portfolioArray = useSelector(state => state.portfolios.portfolios);
-    let listOfPortfolios = portfolioArray.map(port => PortfolioCard(port))
+    // const portfolioArray = useSelector(state => state.portfolios.portfolios);
+    // let listOfPortfolios = portfolioArray.map(port => PortfolioCard(port))
 
     let photoArray = useSelector(state => state.photos.photos)
-    let listOfPhotos = photoArray.map(photo => photo)
+    // let listOfPhotos = photoArray.map(photo => photo)
     
 
     return(
@@ -20,8 +20,8 @@ export default function Gallery(){
                     <Gtitle>GALLERY</Gtitle>
                 </GTitleBox>
                 <GPortfolio>
-                    {listOfPortfolios}
-                        <PortfolioCard photos={listOfPhotos} />
+                    {/* {listOfPortfolios} */}
+                        <PortfolioCard photos={photoArray} />
                 </GPortfolio>
             </GSection>
         </Container>
