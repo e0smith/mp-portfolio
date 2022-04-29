@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../Components/Photos/Home2.jpeg"
+import img from "./Photos/Home2.jpeg"
 import { createGlobalStyle } from "styled-components";
 
 export const FontStyle = createGlobalStyle`
